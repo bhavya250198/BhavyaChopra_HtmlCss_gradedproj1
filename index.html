@@ -1,122 +1,6 @@
 <html>
     <head>
-        <style>
-            body{
-                margin: 0px !important;
-            }
-            header{
-                background-color: #777777;
-               
-                padding:20px;
-            }
-            .pharmacy{
-                color:white;
-                text-align: center;
-            }
-            .menuBar{
-                background-color: #999999;
-
-            }
-           .menu{
-            margin:0%;
-           }
-           .menu li a{
-            color:white;
-            text-decoration: none;
-            cursor: pointer;
-           }
-           .menu li {
-            display: inline-block;
-            padding:10px;
-           }
-           .menu li:hover{
-            background-color: black;
-           }
-           #Dropdown_1,#Dropdown_2,#Dropdown_3{
-            position: absolute;
-            width: auto;
-            max-width: 150px;
-            display: none;
-            background-color: whitesmoke;
-            padding: 0%;
-           }
-          .menu li ul li a{
-            color:#1167b1 !important;
-          }
-          .menu li ul li:hover{
-            background-color: white !important;
-          }
-           .menu li:nth-child(2):hover #Dropdown_1,.menu li:nth-child(3):hover #Dropdown_2,.menu li:nth-last-child(1) #Dropdown_3{
-            display: block;
-           }
-          .container{
-            display: inline-block;
-            border:2px solid #1167b1 !important;
-            width:100%;
-            position: relative;
-            background-size: contain;
-            
-          }
-           #slideset{
-            position: relative;
-            
-           
-           }
-           #slideset > * {
-            visibility: hidden;
-            position:absolute;
-            animation:12s autoplay infinite;
-           }
-           @keyframes autoplay {
-            0%{
-                visibility: visible;
-            }
-           20%{
-                visibility: hidden;
-           }
-           40%{
-            visibility: hidden;
-           }
-           60%{
-            visibility: hidden;
-           }
-           80%{
-            visibility: hidden;
-           }
-           100%{
-            visibility: hidden;
-           }
-           }
-           #slideset > *:nth-child(1){
-            animation-delay: 0s;
-           }
-           #slideset > *:nth-child(2){
-            animation-delay: 4s;
-           }
-           #slideset > *:nth-child(3){
-            animation-delay: 8s;
-           }
-           #slideset > *:nth-child(4){
-            animation-delay: 12s;
-           }
-           #slideset > *:nth-child(5){
-            animation-delay: 16s;
-           }
-           .home-images{
-            width:100%;
-            height: auto;
-            min-width: 100vw;
-           }
-
-            .footer{
-                background-color:  #303234;
-                padding: 15px;
-            }
-            .footer p{
-                color:white;
-            }
-            
-        </style>
+        <link rel="stylesheet" href="styles.css"></link>
     </head>
     <body>
         <div>
@@ -171,28 +55,74 @@
                 </ul>
             </nav>
             <div class="container">
-                <div id="slideset">
-                    <div>
-                        <img class="home-images" src="Animation/ani1.jpg" alt="image-1"/>
+                
+                    
+            
+            </div>
+            <div>
+                <p>Covid Care</p>
+                <div class="flex-container">
+                    <div class="box">
+                        <p>Covid Test Kit</p>
+                        <img class="co-di-images" src="HTML CSS - Images/Images/Products/c1.jpg" alt="image-1"></img>
+                        <p>Rs. 40</p>
+                        <p>Offer - Rs. 30</p>
                     </div>
-                    <div>
-                        <img class="home-images" src="Animation/ani2.png" alt="image-2"/>
+                    <div class="box"> 
+                        <p>Covid Essentials</p>
+                        <img class="co-di-images" src="HTML CSS - Images/Images/Products/c2.jpg" alt="image-1"></img>
+                        <p>Rs. 40</p>
+                        <p>Offer - Rs. 30</p>
                     </div>
-                    <div>
-                        <img class="home-images" src="Animation/ani3.jpg" alt="image-3"/>
+                    <div class="box"> 
+                        <p>Sanitizer</p>
+                        <img class="co-di-images" src="HTML CSS - Images/Images/Products/c3.jpg" alt="image-1"></img>
+                        <p>Rs. 40</p>
+                        <p>Offer - Rs. 30</p>
                     </div>
-                    <div>
-                        <img class="home-images" src="Animation/ani4.jpg" alt="image-4"/>
-                    </div>
-                    <div>
-                        <img class="home-images" src="Animation/ani5.jpg" alt="image-5"/>
+                    <div class="box"> 
+                        <p>Mask</p>
+                        <img class="co-di-images" src="HTML CSS - Images/Images/Products/c4.jpg" alt="image-1"></img>
+                        <p>Rs. 40</p>
+                        <p>Offer - Rs. 30</p>
                     </div>
                 </div>
             </div>
-            <!-- <div class="footer">
+            <div>
+                <p>Diabetes Care</p>
+                <div class="flex-container">
+                    <div class="box">
+                        <p>Medicine</p>
+                        <img class="co-di-images" src="HTML CSS - Images/Images/Products/d1.jpg" alt="image-1"></img>
+                        <p>Rs. 40</p>
+                        <p>Offer - Rs. 30</p>
+                    </div>
+                    <div class="box"> 
+                        <p>Chywanprash</p>
+                        <img class="co-di-images" src="HTML CSS - Images/Images/Products/d2.jpg" alt="image-1"></img>
+                        <p>Rs. 40</p>
+                        <p>Offer - Rs. 30</p>
+                    </div>
+                    <div class="box"> 
+                        <p>Toothpaste</p>
+                        <img class="co-di-images" src="HTML CSS - Images/Images/Products/d3.jpg" alt="image-1"></img>
+                        <p>Rs. 40</p>
+                        <p>Offer - Rs. 30</p>
+                    </div>
+                    <div class="box"> 
+                        <p>Sugarfree-Biscuits</p>
+                        <img class="co-di-images" src="HTML CSS - Images/Images/Products/d4.png" alt="image-1"></img>
+                        <p>Rs. 40</p>
+                        <p>Offer - Rs. 30</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <footer>
                 <p>@copyright. Only for demonstration
                     purposes</p>
-                </div> -->
+                </footer>
         </div>
     </body>
 </html>
