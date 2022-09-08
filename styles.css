@@ -14,6 +14,9 @@ header{
     background-color: #999999;
 
 }
+#news{
+    display: none;
+}
 .menu{
 margin:0%;
 }
@@ -28,6 +31,9 @@ padding:10px;
 }
 .menu li:hover{
 background-color: black;
+}
+.menu li:active{
+    background-color: black;
 }
 #Dropdown_1,#Dropdown_2,#Dropdown_3{
 position: absolute;
@@ -46,7 +52,7 @@ background-color: white !important;
 .menu li:nth-child(2):hover #Dropdown_1,.menu li:nth-child(3):hover #Dropdown_2,.menu li:nth-last-child(1) #Dropdown_3{
 display: block;
 }
-.container{
+.container-div{
 display: inline-block;
 border:2px solid #1167b1 !important;
 width:100%;
@@ -56,16 +62,7 @@ background-repeat: no-repeat;
 background-size: cover;
 animation: slide 20s infinite;
 }
-#slideset{
-position: relative;
 
-
-}
-#slideset > * {
-visibility: hidden;
-position:absolute;
-animation:12s autoplay infinite;
-}
 @keyframes slide {
 
 25%{
@@ -130,3 +127,43 @@ footer{
 footer p{
     color:white;
 }
+.form-inline {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-inline button:hover {
+    background-color: royalblue;
+  }
+  
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+    
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
