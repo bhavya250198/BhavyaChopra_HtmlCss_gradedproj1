@@ -127,12 +127,35 @@ footer{
 footer p{
     color:white;
 }
+.form{
+    padding:15px;
+}
 .parent{
     display: flex;
 }
-.image{
-    background: url(./Lab-Test/lab-test.jpg);
-}
+
 .child-1{
     display: flex;
+    justify-content: space-between;
+    width:500px;
+}
+ input
+ {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+input:focus {
+    outline:none !important;
+}
+.form-layout{
+    flex-direction: column;
+}
+.body{
+    display: flex;
+    height:300px;
+    overflow-y:scroll;
+}
+.buttons{
+    margin:10px 0px;
 }
